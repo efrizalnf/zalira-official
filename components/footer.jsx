@@ -1,5 +1,6 @@
 import Image from "next/image";
-import styles from '/styles/Home.module.css'
+import styles from '/styles/Home.module.css';
+import Logo from '../public/assets/img/zlogo.png';
 
 const Footer = () => {
 
@@ -12,7 +13,7 @@ const Footer = () => {
             >
                 Powered by{' zalira'}
                 <span className={styles.logo}>
-                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                    <Image src={Logo} alt="Vercel Logo" width={20} height={20} />
                 </span>
             </a>
         </footer>

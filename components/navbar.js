@@ -47,6 +47,7 @@ const Navbar = () => {
         //             </li>
         //         </ul>
         //     </div>
+        // </div>
         <>
             <div
                 style={{ backgroundColor: `${navBg}` }}
@@ -69,22 +70,22 @@ const Navbar = () => {
                     <div>
                         <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/'>Home</Link>
+                                <Link href='/' className='rounded-full bg-slate-300 p-3'>Home</Link>
                             </li>
                             <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/about'>About</Link>
+                                <Link href='/about' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>About</Link>
                             </li>
                             <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/#skills'>Skills</Link>
+                                <Link href='/#skills' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700' >Skills</Link>
                             </li>
                             <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/#projects'>Projects</Link>
+                                <Link href='/#projects' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>Projects</Link>
                             </li>
                             <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/resume'>Resume</Link>
+                                <Link href='/resume' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>Resume</Link>
                             </li>
                             <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/#contact'>Contact</Link>
+                                <Link href='/#contact' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>Contact</Link>
                             </li>
                         </ul>
                         {/* Hamburger Icon */}
@@ -168,7 +169,7 @@ const Navbar = () => {
                                     </li>
                                 </Link>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </div>
