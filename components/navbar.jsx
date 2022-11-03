@@ -6,7 +6,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState('#ecf0f3');
+    const [navBg, setNavBg] = useState('#f1f7f6');
     const [linkColor, setLinkColor] = useState('#1f2937');
     const handleNav = () => {
         setNav(!nav);
@@ -23,38 +23,13 @@ const Navbar = () => {
         window.addEventListener('scroll', handleShadow);
     }, []);
     return (
-        // <div className='flex justify-between bg-[#f1f7f6]'>
-        //     <div className="logo m-5">
-        //         <Image
-        //             src={NavLogo}
-        //             alt='/'
-        //             width='45'
-        //             height='45'
-        //             className='cursor-pointer'
-        //         />
-        //     </div>
-        //     <div className='nav self-center'>
-        //         <ul className="flex list-none m-3">
-        //             <li className="text-sm uppercase hover:border-b ml-5">
-        //                 <Link href="/">
-        //                     Home
-        //                 </Link>
-        //             </li>
-        //             <li className="text-sm uppercase hover:border-b ml-5">
-        //                 <Link href="/about">
-        //                     About
-        //                 </Link>
-        //             </li>
-        //         </ul>
-        //     </div>
-        // </div>
         <>
             <div
                 style={{ backgroundColor: `${navBg}` }}
                 className={
                     shadow
-                        ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-                        : 'fixed w-full h-20 z-[100]'
+                        ? 'fixed w-full h-12 shadow-xl z-[100] ease-in-out duration-300'
+                        : 'fixed w-full h-12 z-[100]'
                 }
             >
                 <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
@@ -62,30 +37,30 @@ const Navbar = () => {
                         <Image
                             src={NavLogo}
                             alt='/'
-                            width='50'
-                            height='50'
-                            className='cursor-pointer'
+                            width='37'
+                            height='37'
+                            className='ml-2 rounded-full border-solid border-2 border-slate-500 cursor-pointer'
                         />
                     </Link>
                     <div>
                         <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/' className='rounded-full bg-slate-300 p-3'>Home</Link>
+                            <li className='ml-7 text-sm uppercase'>
+                                <Link href='/' className='rounded-full bg-gray-700 text-slate-50 pl-2 pr-2 pt-1 pb-1'>Home</Link>
                             </li>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/about' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>About</Link>
+                            <li className='ml-7 text-sm uppercase'>
+                                <Link href='/about' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>About</Link>
                             </li>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/#skills' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700' >Skills</Link>
+                            <li className='ml-7 text-sm uppercase'>
+                                <Link href='/#skills' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700' >Skills</Link>
                             </li>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/#projects' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>Projects</Link>
+                            <li className='ml-7 text-sm uppercase'>
+                                <Link href='/#projects' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>Projects</Link>
                             </li>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/resume' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>Resume</Link>
+                            <li className='ml-7 text-sm uppercase'>
+                                <Link href='/resume' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>Resume</Link>
                             </li>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                <Link href='/#contact' className='rounded-full p-3 hover:bg-slate-300 group-hover:transition-shadow duration-700'>Contact</Link>
+                            <li className='ml-7 text-sm uppercase'>
+                                <Link href='/#contact' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>Contact</Link>
                             </li>
                         </ul>
                         {/* Hamburger Icon */}
