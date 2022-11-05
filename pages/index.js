@@ -38,9 +38,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <section className='jumbotron bg-[url("../public/assets/img/net.jpg")] mb-10 top-0 left-0 laptop:w-full laptop:h-96 tablet:w-full tablet:h-72 hp:w-full hp:h-40 relative'>
-          <div className='mb-10 top-0 left-0 laptop:w-full laptop:h-96 tablet:w-full tablet:h-72 hp:w-full hp:h-40 bg-gradient-to-t from-slate-500 to-transparent z-9'></div>
-          <Image src={jumboImage} className='laptop:ml-32 laptop:block tablet:hidden hp:hidden laptop:w-64 laptop:h-80 absolute m-auto top-0 left-0 bottom-0 fill-transparent z-7' alt='bgjumbo'></Image>
+        <section className='jumbotron bg-[url("../public/assets/img/net.jpg")] bg-no-repeat bg-cover bg-center mb-10 top-0 left-0 laptop:w-full laptop:h-96 tablet:w-full tablet:h-72 hp:w-full hp:h-40 relative'>
+          <div className='mb-10 top-0 left-0 laptop:w-full laptop:h-96 tablet:w-full tablet:h-72 hp:w-full hp:h-40 bg-gradient-to-t from-stone-700 to-transparent z-40'></div>
+          <Image src={jumboImage} className='laptop:ml-32 laptop:block tablet:hidden hp:hidden laptop:w-64 laptop:h-80 absolute m-auto top-0 left-0 bottom-0 fill-transparent z-4' alt='bgjumbo'></Image>
           <Image id='logo' src={jumboImageLogo} className='laptop:block absolute top-0 bottom-0 laptop:w-full laptop:h-full z-20' alt='bgjumbo'></Image>
           <Image id='a-right' src={ArrowRight} className='laptop:block absolute laptop:w-50 laptop:h-50 m-auto top-0 bottom-0 right-0 z-12' alt='arrowjumbo'></Image>
           <Image id='a-left' src={ArrowLeft} width='50px' height='50px' className='laptop:block absolute m-auto top-0 bottom-0 left-0 z-12' alt='arrowjumbo'></Image>
