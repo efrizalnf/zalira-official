@@ -39,11 +39,11 @@ const Navbar = () => {
                             alt='/'
                             width='37'
                             height='37'
-                            className='ml-2 rounded-full border-solid border-2 border-slate-500 cursor-pointer'
+                            className='ml-2 rounded-full border-double border-2 border-slate-500 cursor-pointer'
                         />
                     </Link>
                     <div>
-                        <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+                        <ul style={{ color: `${linkColor}` }} className='hidden laptop:flex'>
                             <li className='ml-7 text-sm uppercase'>
                                 <Link href='/' className='rounded-full bg-gray-700 text-slate-50 pl-2 pr-2 pt-1 pb-1'>Home</Link>
                             </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
                         <div
                             style={{ color: `${linkColor}` }}
                             onClick={handleNav}
-                            className='md:hidden'
+                            className='laptop:hidden'
                         >
                             <AiOutlineMenu size={25} />
                         </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
                 {/* Overlay */}
                 <div
                     className={
-                        nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+                        nav ? 'laptop:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
                     }
                 >
                     {/* Side Drawer Menu */}

@@ -1,8 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-body {
-    background: linear-gradient(#58A9CE, #323e41);
-    position: relative;
+@layer base {
+    html {
+        font-family: Poppins, system-ui, sans-serif;
+        background: linear-gradient(to top, #d4e3e7, #ebf0f3);
+    }
 }
+/* 
+html {
+    background: linear-gradient(to top, #d4e3e7, #ebf0f3);
+} */
+
+@layer components {
+    .card {
+        background-color: theme('colors.white');
+        border-radius: theme('borderRadius.lg');
+        padding: theme('spacing.6');
+        box-shadow: theme('boxShadow.xl');
+    }
+}
+

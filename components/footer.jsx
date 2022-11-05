@@ -5,18 +5,20 @@ import Logo from '../public/assets/img/zlogo.png';
 const Footer = () => {
 
     return (
-        <footer className={styles.footer}>
-            <a
-                href="https://zalira.my.id"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Powered by{' zalira'}
-                <span className={styles.logo}>
-                    <Image src={Logo} alt="Vercel Logo" width={20} height={20} />
-                </span>
-            </a>
-        </footer>
+        <div className='relative'>
+            <footer className={styles.footer}>
+                <a
+                    href="https://zalira.my.id"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Build by{' zalira'}
+                    <span className={styles.logo}>
+                        <Image src={Logo} alt="Vercel Logo" width={20} height={20} />
+                    </span>
+                </a>
+            </footer>
+        </div>
     )
 }
 
