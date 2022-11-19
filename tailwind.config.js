@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -15,6 +16,19 @@ module.exports = {
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
+    keyframes: {
+      marquee: {
+        '0 %': { left: '0' },
+        '100%': { left: '-100%' },
+      }
+    },
+    animation: {
+      marquee: 'marquee 5s linear infinite'
+    },
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif']
+    },
+
   },
   plugins: [],
 }

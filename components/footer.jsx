@@ -5,7 +5,7 @@ import Logo from '../public/assets/img/zlogo.png';
 const Footer = () => {
 
     return (
-        <div className='relative'>
+        <div className='relative mt-7'>
             <footer className={styles.footer}>
                 <a
                     href="https://zalira.my.id"
