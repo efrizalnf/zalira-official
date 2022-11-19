@@ -16,6 +16,7 @@ html {
 
 @layer components {
     .card {
+        width: 100%;
         background-color: theme('colors.white');
         border-radius: theme('borderRadius.lg');
         padding: theme('spacing.6');
