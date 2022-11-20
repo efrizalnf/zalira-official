@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
+  mode: 'jit',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -16,14 +17,19 @@ module.exports = {
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
+    animation: {
+      marquee: 'marquee 60s linear infinite',
+      marquee2: 'marquee2 60s linear infinite',
+    },
     keyframes: {
       marquee: {
-        '0 %': { left: '0' },
-        '100%': { left: '-100%' },
-      }
-    },
-    animation: {
-      marquee: 'marquee 5s linear infinite'
+        '0%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+      marquee2: {
+        '0%': { transform: 'translateX(100%)' },
+        '100%': { transform: 'translateX(0%)' },
+      },
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif']
