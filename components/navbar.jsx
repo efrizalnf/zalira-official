@@ -48,16 +48,10 @@ const Navbar = () => {
                                 <Link href='/' className='rounded-full bg-gray-700 text-slate-50 pl-2 pr-2 pt-1 pb-1'>Home</Link>
                             </li>
                             <li className='ml-7 text-sm uppercase'>
-                                <Link href='/about' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>About</Link>
-                            </li>
-                            <li className='ml-7 text-sm uppercase'>
-                                <Link href='/#skills' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700' >Skills</Link>
+                                <Link href='/#about' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>About</Link>
                             </li>
                             <li className='ml-7 text-sm uppercase'>
                                 <Link href='/#projects' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>Projects</Link>
-                            </li>
-                            <li className='ml-7 text-sm uppercase'>
-                                <Link href='/resume' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>Resume</Link>
                             </li>
                             <li className='ml-7 text-sm uppercase'>
                                 <Link href='/#contact' className='rounded-full pl-2 pr-2 pt-1 pb-1 hover:bg-slate-300 group-hover:transition-opacity duration-700'>Contact</Link>

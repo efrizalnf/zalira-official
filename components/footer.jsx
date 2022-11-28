@@ -6,15 +6,16 @@ const Footer = () => {
 
     return (
         <div className='relative mt-7'>
+               
             <footer className={styles.footer}>
                 <a
                     href="https://zalira.my.id"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Build by{' zalira'}
+                    Copyright © 2022 | {' zalira'}
                     <span className={styles.logo}>
-                        <Image src={Logo} alt="Vercel Logo" width={20} height={20} />
+                        <Image src={Logo} alt="logo zalira" width={20} height={20} />
                     </span>
                 </a>
             </footer>
