@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 @layer base {
-    html {
-        font-family: Poppins, system-ui, sans-serif;
-        background: linear-gradient(to top, #d4e3e7, #ebf0f3);
-    }
+  html {
+    font-family: Poppins, system-ui, sans-serif;
+    background: linear-gradient(to top, #d4e3e7, #ebf0f3);
+  }
 }
 /* 
 html {
@@ -15,12 +15,73 @@ html {
 } */
 
 @layer components {
-    .card {
-        width: 100%;
-        background-color: theme('colors.white');
-        border-radius: theme('borderRadius.lg');
-        padding: theme('spacing.6');
-        box-shadow: theme('boxShadow.xl');
-    }
+  .card {
+    width: 100%;
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
 }
 
+@keyframes translatestf {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-2160px));
+  }
+}
+
+.carousel-slider .barrier {
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slider ul.lane {
+  display: flex;
+  height: 100%;
+}
+.carousel-slider ul.lane li.car {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #343434;
+}
+
+#carousel .barrier {
+  background: #fff;
+  box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+}
+#carousel .barrier::before,
+#carousel .barrier::after {
+  content: " ";
+  position: absolute;
+  z-index: 9;
+  width: 180px;
+  height: 100%;
+}
+#carousel .barrier::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+#carousel .barrier::after {
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+#carousel .barrier ul.lane {
+  width: calc(4320px);
+}
+#carousel .barrier ul.lane li.car {
+  width: 180px;
+  animation: translateinfinite 25s linear infinite;
+}
