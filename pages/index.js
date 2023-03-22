@@ -5,16 +5,9 @@ import jumboImage from "../public/assets/img/bgjumbo.png";
 import jumboImageLogo from "../public/assets/img/zlogo-bg.png";
 import ArrowRight from "../public/assets/img/arrow-r.png";
 import ArrowLeft from "../public/assets/img/arrow-l.png";
-import cermin from "../public/assets/img/cermin.png";
-import beristirahatlah from "../public/assets/img/beristirahatlah.png";
-import guest from "../public/assets/img/guest.png";
-import waktoo from "../public/assets/img/waktoo.png";
-import sukema from "../public/assets/img/sukema.png";
-import websch from "../public/assets/img/websch.png";
-import ExamForms from "../public/assets/img/ExamForms.png";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import SmartLink from "../helper/smartlink";
+import { useEffect } from "react";
+import Carousel from "../components/carousel";
+
 export default function Home() {
   useEffect(() => {
     const logos = document.getElementById("logo");
@@ -52,6 +45,7 @@ export default function Home() {
     };
     window.addEventListener("scroll", handleJumbotron);
   }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -113,156 +107,8 @@ export default function Home() {
               Our Product
             </h4>
           </div>
-          {/* <div id="projects" className="animate-marquee2 ">
-            <div className="inline-flex p-10">
-              <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4">
-                <Image src={cermin} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                <h3 className="laptop:text-lg hp:text-sm underline">Ebook Apps Cermin Muslim</h3>
-                <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                  <a href="s.id/cerminmuslim" target={"_blank"} rel={"noreferrer"} />
-                  Link
-                </button>
-                <p className="laptop:text-sm hp:text-xs">
-                  Ebook apps build in android studio using java lang.
-                </p>
-              </div>
-              <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                <Image
-                  src={beristirahatlah}
-                  alt="prod-1"
-                  className="w-full laptop:h-52 hp:h-24 mb-4"
-                />
-                <h3 className="laptop:text-lg hp:text-sm underline mb-2">#Beristirahatlah</h3>
-                <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                  <a href="s.id/beristirahatlah" target={"_blank"} rel={"noreferrer"} />
-                  Link
-                </button>
-                <p className="laptop:text-sm hp:text-xs">Ebook Catalogue apps</p>
-              </div>
-              <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                <Image src={ExamForms} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                <h3 className="laptop:text-lg hp:text-sm underline mb-2">ExamForms</h3>
-                <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=id.zlz.examforms"
-                    target={"_blank"}
-                    rel={"noreferrer"}
-                  />
-                  Link
-                </button>
-                <p className="laptop:text-sm hp:text-xs">
-                  Exam Apps For Google Forms and Microsoft Forms
-                </p>
-              </div>
-              <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                <Image src={guest} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                <h3 className="laptop:text-lg hp:text-sm underline mb-2">Guest Book Apps</h3>
-                <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                  <a
-                    href="https://bukutamu.sman14bdg.sch.id"
-                    target={"_blank"}
-                    rel={"noreferrer"}
-                  />
-                  Link
-                </button>
-                <p className="laptop:text-sm hp:text-xs">
-                  Guest book Apps build using ReactJs and ExpressJs as Backend and WhatsApp Bot
-                  integration
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="absolute top-0 left-20 animate-marquee">
-            <div className="inline-flex p-10">
-              <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                <Image src={sukema} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                <h3 className="laptop:text-lg hp:text-sm underline mb-2">Sukema</h3>
-                <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                  <a
-                    href="https://sukema.mtssnurulhuda.sch.id"
-                    target={"_blank"}
-                    rel={"noreferrer"}
-                  >
-                    Link
-                  </a>
-                </button>
-                <p className="laptop:text-sm hp:text-xs">Letter apps management apps</p>
-              </div>
-              <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                <Image src={websch} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                <h3 className="laptop:text-lg hp:text-sm underline mb-2">School Website</h3>
-                <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                  <a href="https://mtssnurulhuda.sch.id" target={"_blank"} rel={"noreferrer"} />
-                  Link
-                </button>
-                <p className="laptop:text-sm hp:text-xs">School website of MTs Nurul huda</p>
-              </div>
-            </div>
-          </div> */}
 
-          <div id="carousel" className="carousel-slider">
-            <div className="barrier">
-              <ul className="lane">
-                <li className="car">
-                  <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                    <Image src={sukema} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                    <h3 className="laptop:text-lg hp:text-sm underline mb-2">Sukema</h3>
-                    <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                      <a
-                        href="https://sukema.mtssnurulhuda.sch.id"
-                        target={"_blank"}
-                        rel={"noreferrer"}
-                      >
-                        Link
-                      </a>
-                    </button>
-                    <p className="laptop:text-sm hp:text-xs">Letter apps management apps</p>
-                  </div>
-                </li>
-
-                <li className="car">
-                  <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                    <Image src={websch} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                    <h3 className="laptop:text-lg hp:text-sm underline mb-2">School Website</h3>
-                    <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                      <a href="https://mtssnurulhuda.sch.id" target={"_blank"} rel={"noreferrer"} />
-                      Link
-                    </button>
-                    <p className="laptop:text-sm hp:text-xs">School website of MTs Nurul huda</p>
-                  </div>
-                </li>
-
-                <li className="car">
-                  <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                    <Image src={sukema} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                    <h3 className="laptop:text-lg hp:text-sm underline mb-2">Sukema</h3>
-                    <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                      <a
-                        href="https://sukema.mtssnurulhuda.sch.id"
-                        target={"_blank"}
-                        rel={"noreferrer"}
-                      >
-                        Link
-                      </a>
-                    </button>
-                    <p className="laptop:text-sm hp:text-xs">Letter apps management apps</p>
-                  </div>
-                </li>
-
-                <li className="car">
-                  <div className="card product laptop:w-60 hp:w-40 laptop:h-96 hp:h-72 m-5 text-center p-4 ">
-                    <Image src={websch} alt="prod-1" className="w-full laptop:h-52 hp:h-24 mb-4" />
-                    <h3 className="laptop:text-lg hp:text-sm underline mb-2">School Website</h3>
-                    <button className="bg-slate-700 rounded-xl p-1 w-full text-amber-300">
-                      <a href="https://mtssnurulhuda.sch.id" target={"_blank"} rel={"noreferrer"} />
-                      Link
-                    </button>
-                    <p className="laptop:text-sm hp:text-xs">School website of MTs Nurul huda</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <Carousel />
         </section>
         <section className="card recent-project mb-5">
           <div className="mb-5 text-center text-4xl underline text-amber-300">
@@ -273,10 +119,9 @@ export default function Home() {
               className="laptop:w-full laptop:h-96 hp:w-full hp:h-40 m-5 rounded-2xl"
               src="https://www.youtube.com/embed/6SBO5hPRLnQ"
               title="YouTube video player"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+              allowFullScreen
+            />
             <article className="ml-5 align-middle">
               Aplikasi buku tamu yang dilengkapi dengan WhatsApp Gateway/Bot mempermudah validasi
               dan konfirmasi tamu yang berkunjung. Admin dapat mengecek rekap tamu secara real time.
