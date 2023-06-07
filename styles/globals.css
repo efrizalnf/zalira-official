@@ -59,7 +59,7 @@ html {
   }
   #carousel .barrier ul.lane li.car {
     width: 180px;
-    animation: translateinfinite 25s linear infinite;
+    animation: translateinfinite 60s linear infinite;
   }
 }
 

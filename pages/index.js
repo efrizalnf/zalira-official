@@ -83,9 +83,9 @@ export default function Home() {
             className="laptop:block laptop:w-32 laptop:h-32 hp:w-6 hp:h-6 absolute m-auto top-0 bottom-0 left-0 z-12"
             alt="arrowjumbo"
           ></Image>
-          <div className="inset-x-0 bottom-1/4 absolute">
+          <div className="inset-x-0 bottom-0 absolute">
             <h1 className="text-lg font-bold z-20 text-center text-amber-300 drop-shadow-md hover:drop-shadow-xl">
-              Zalira Edu Tech
+              Zalira
             </h1>
           </div>
         </section>
